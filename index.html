@@ -32,6 +32,7 @@
         const urlParams = new URLSearchParams(window.location.search);
         const friendName = urlParams.get('name');
         if (friendName) {
+            document.querySelector('meta[property="og:description"]').setAttribute('content', `We Wish You a Merry Christmas, ${friendName}`);
             document.getElementById('friendName').value = friendName;
         }
     </script>
