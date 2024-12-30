@@ -124,7 +124,7 @@ function playSong() {
 // Share on any social media
 document.getElementById('shareAnyButton').addEventListener('click', () => {
     const friendNameInput = document.getElementById('friendName').value;
-    document.querySelector('meta[property="og:description"]').setAttribute('content', `We Wish You a Merry Christmas, ${friendName}`);
+    document.querySelector('meta[property="og:description"]').setAttribute('content', `We Wish You a Merry Christmas, ${friendNameInput}`);
     const shareUrl = `${window.location.origin}${window.location.pathname}?name=${encodeURIComponent(friendNameInput)}`;
     const shareData = {
         title: 'Christmas Greeting',
