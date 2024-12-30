@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Song</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.39/Tone.js"></script>
+    <meta property="og:title" content="Christmas Greeting">
+    <meta property="og:description" content="We Wish You a Merry Christmas, [FriendName]">
+    <meta property="og:image" content="santa.svg">
+    <meta property="og:url" content="http://127.0.0.1:5500">
+</head>
+<body>
+    <div class="container">
+        <h1>We Wish You a Merry Christmas</h1>
+        <input type="text" id="friendName" placeholder="Enter your friend's name">
+        <button id="playSong" onclick="playSong()"> Play Song  &#127925;</button>
+        <button id="shareAnyButton" style="background-color: skyblue"> Share 📱</button>
+        
+        <div id="result" class="result">
+            <img src="santa.svg" alt="Santa Claus" class="santa-img">
+            <div id="friendNameDisplay" class="name-display"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // Check if the query parameter 'name' exists and play the song with that name
+        const urlParams = new URLSearchParams(window.location.search);
+        const friendName = urlParams.get('name');
+        if (friendName) {
+            document.getElementById('friendName').value = friendName;
+        }
+    </script>
+</body>
+</html>
