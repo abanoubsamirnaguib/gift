@@ -33,10 +33,10 @@ input {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    color: white;
-    background-color: white;
+    background-color: white; /* Ensure white background */
     color: black;
     margin-top: 20px;
+    position: relative; /* Ensure positioning for child elements */
 }
 
 button {
@@ -103,6 +103,7 @@ audio {
     z-index: 10; /* Ensure it overlays other elements */
     border-radius: 10px; /* Match the container's border radius */
     overflow: hidden; /* Ensure fireworks stay within the container */
+    background-color: transparent; /* Ensure transparency */
 }
 
 h1 {

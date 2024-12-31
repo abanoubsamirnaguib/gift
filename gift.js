@@ -11,7 +11,7 @@ window.addEventListener('load', () => {
         greetingHeading.style.fontFamily = 'Tahoma, sans-serif';
         greetingHeading.innerHTML = `نتمنى لكم عيد ميلاد مجيد<br>${friendName}`;
         songText = `نتمنى لكم عيد ميلاد مجيد يا${friendName}`;
-        document.getElementById('playGreeting').textContent = 'تشغيل التحية 🎵';
+        document.getElementById('playGreeting').textContent = 'تشغيل الفديو 🎵';
         document.getElementById('shareGreeting').textContent = ' مشاركة 📱';
         document.getElementById('instruction-text').textContent = '🎆 شاهد الألعاب النارية السحرية والرسالة الخاصة! 🎵';
     } else {
@@ -19,7 +19,7 @@ window.addEventListener('load', () => {
         greetingHeading.style.fontFamily = "'Mountains of Christmas', cursive";
         greetingHeading.innerHTML = `We Wish You a Merry Christmas<br>${friendName}`;
         songText = `We Wish You a Merry Christmas ya ${friendName}`;
-        document.getElementById('playGreeting').textContent = 'Play Greeting 🎵';
+        document.getElementById('playGreeting').textContent = 'Play video 🎵';
         document.getElementById('shareGreeting').textContent = ' Share 📱';
         document.getElementById('instruction-text').textContent = '🎆 Experience magical fireworks and a special message! 🎵';
     }
